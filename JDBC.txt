@@ -1,0 +1,5 @@
+     1）建立连接
+       Class.forName("com.mysql.jdbc.Driver");//加载驱动类）
+        //建立连接(连接对象内部其实包含了一个Socket对象，是一个远程的连接比较耗时，这是Connection连接对象的一个要点）
+        //真正开发中，为了提高效率，一般综合使用连接池来管理连接对象
+         Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test?useSSL=false","root","123456");
