@@ -1,1 +1,9 @@
-abc
+Servlet
+请求的转发，只发送了一次请求（地址栏不变）而请求的重定向转发了两次请求（地址栏改变，最终的Servlet中request不是中转的request）
+
+JSP隐藏域
+域	        作用范围
+PageContext域	当前JSP页面范围
+request域	一次请求（this）
+session域	一次会话
+application域	整个web应用
