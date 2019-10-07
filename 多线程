@@ -136,3 +136,17 @@ class WeddingCompany implements Merry{
     }
 }
 
+线程的5状态
+1新生状态
+Thread t=new Thread（）；线程对象一建立就进入新生状态
+2 就绪状态  
+1}调用start方法进入就绪状态，但是不一定立刻调度执行
+2）阻塞状态解除进入就绪状态
+3）调用yield方法
+4）jvm将cpu从本地线程切换到其他线程
+3 运行状态
+被cpu调度到才能进入，执行代码块
+4阻塞状态
+sleep wait join  read/writer
+5死亡状态
+代码执行完或者强制中止（不安全，不推荐）stop destory
